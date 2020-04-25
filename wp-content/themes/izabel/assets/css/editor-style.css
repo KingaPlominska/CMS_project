@@ -1,0 +1,1098 @@
+/*
+Theme Name: Izabel
+Description: Used to style the TinyMCE editor.
+*/
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Body
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Forms
+ * 5.0 - Navigation
+ *   5.1 - Links
+ * 6.0 - Alignments
+ * 7.0 - Clearings
+ * 8.0 - Widgets
+ * 9.0 - Content
+ * 	  9.1 - Header
+ *    9.2 - Posts and pages
+ *    9.3 - Comments
+ * 10.0 - Media
+ *    10.1 - Captions
+ *    10.2 - Galleries
+ * 11.0 - Media Queries
+ *    11.1 - >= 640px
+ *    11.2 - >= 1366px
+ *    11.3 - >= 1600px
+ * 12.0 - Colors
+ * 13.0 - RTL
+ */
+
+
+/**
+ * 1.0 - Body
+ */
+
+body {
+	margin: 30px 25px;
+	max-width: 1040px;
+	vertical-align: baseline;
+}
+
+
+/**
+ * 2.0 - Typography
+ */
+
+body,
+input,
+select,
+textarea {
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 400;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: 1.56;
+ 	letter-spacing: normal;
+}
+
+.drop-cap:first-letter {
+	font-size: 96px;
+	font-size: 6rem;
+}
+
+
+blockquote {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.wp-caption .wp-caption-text{
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+blockquote cite,
+blockquote small,
+.post-password-form label {
+	font-size: 13px;
+	font-size: 0.8125rem;
+}
+
+.post-navigation .nav-subtitle {
+	font-size: 11px;
+	font-size: 0.6875rem;
+}
+
+body,
+input,
+select,
+textarea {
+	font-family: 'PT Sans', sans-serif;
+}
+
+h1,
+.mce-content-body h1,
+h2,
+.mce-content-body h2,
+h3,
+.mce-content-body h3,
+h4,
+.mce-content-body h4,
+h5,
+.mce-content-body h5,
+h6,
+.mce-content-body h6,
+blockquote,
+.more-link,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h1,
+.mce-content-body h1,
+h2,
+.mce-content-body h2,
+h3,
+.mce-content-body h3,
+h4,
+.mce-content-body h4,
+h5,
+.mce-content-body h5,
+h6,
+.mce-content-body h6 {
+	clear: both;
+	font-weight: 600;
+	margin: 0;
+	text-rendering: optimizeLegibility;
+}
+
+p {
+	margin: 0 0 1.555555555555556em;
+}
+
+dfn,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	border-left: 5px solid;
+	line-height: 1.4;
+	font-weight: 600;
+	margin: 0 0 1.4em;
+	overflow: hidden;
+	padding: 0.35em 0 0.35em 1.4em;
+}
+
+blockquote p {
+	margin-bottom: 1.4em;
+}
+
+blockquote cite,
+blockquote small {
+	display: block;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.62;
+}
+
+blockquote em,
+blockquote i {
+	font-style: italic;
+}
+
+blockquote > :last-child {
+	margin-bottom: 0;
+}
+
+address {
+	font-style: normal;
+	margin: 0 0 1.555555555555556em;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-family: Inconsolata, monospace;
+	font-style: normal;
+}
+
+pre {
+	margin: 0 0 1.555555555555556em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.555555555555556em;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+mark,
+ins,
+code {
+	padding: 0.125em 0.25em;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #eee;
+	cursor: help;
+}
+
+mark,
+ins {
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/**
+ * 3.0 - Elements
+ */
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	margin: 0 0 1.555555555555556em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.555555555555556em 1.3125em;
+	padding: 0;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
+
+dl {
+	margin: 0 0 1.555555555555556em;
+}
+
+dt {
+	font-weight: 500;
+}
+
+dd {
+	margin: 0 1.3125em 1.555555555555556em;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+	vertical-align: middle;
+}
+
+del {
+	opacity: 0.8;
+}
+
+table,
+.mce-item-table,
+th,
+.mce-item-table th,
+td,
+.mce-item-table td {
+	border: 1px solid #ebebeb;
+}
+
+table,
+.mce-item-table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 0 1.555555555555556em;
+	table-layout: fixed;
+	/* Prevents HTML tables from becoming too wide */
+	width: 100%;
+}
+
+caption,
+.mce-item-table caption {
+	font-weight: 500;
+	text-align: center;
+}
+
+th,
+.mce-item-table th,
+td,
+.mce-item-table td {
+	font-weight: normal;
+	text-align: left;
+}
+
+thead th {
+	font-weight: 700;
+}
+
+th a {
+	text-decoration: none;
+}
+
+caption,
+th,
+td {
+	padding: 14px;
+}
+
+.drop-cap:first-letter {
+	float: left;
+	line-height: 0.6;
+	margin: 7px 21px 7px -3px;
+}
+
+.wp-caption .wp-caption-text {
+	padding: 14px 21px;
+}
+
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	padding: 10px 28px;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea {
+	padding: 10px 21px;
+}
+
+/**
+ * 4.0 - Forms
+ */
+
+button[disabled]:hover,
+button[disabled]:focus,
+.button,
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus {
+	-webkit-border-radius: 26px;
+	border-radius: 26px;
+	border: none;
+	display: inline-block;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: capitalize;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+	outline: thin dotted;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea {
+	border: 1px solid;
+	border-color: transparent;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin-top: 7px;
+	width: 100%;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="month"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+	outline: 0;
+}
+
+.post-password-form {
+	margin-bottom: 1.555555555555556em;
+}
+
+.post-password-form label {
+	display: block;
+	margin-bottom: 1.555555555555556em;
+	text-transform: uppercase;
+}
+
+.post-password-form input[type="password"] {
+	margin-top: 0.824em;
+}
+
+.post-password-form > :last-child {
+	margin-bottom: 0;
+}
+
+.search-form {
+	position: relative;
+}
+
+input[type="search"].search-field {
+	font-size: 14px;
+	font-size: 0.875rem;
+	-webkit-appearance: none;
+	line-height: 1.5;
+	margin: 0;
+	padding-right: 41px;
+	width: 100%;
+}
+
+.search-submit {
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	bottom: 0;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 41px;
+}
+
+.search-submit:hover,
+.search-submit:focus {
+	background-color: transparent;
+}
+
+select {
+	background-color: transparent;
+	border: 1px solid;
+	font-size: 14px;
+	font-size: 0.875rem;
+	padding: 12px 18px;
+}
+
+
+/**
+ * 5.0 - Navigation
+ */
+
+/**
+ * 5.1 - Links
+ */
+
+a {
+	text-decoration: none;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/**
+ * 6.0 - Alignments
+ */
+
+.alignleft {
+	float: left;
+	margin: 0.35em 2.1em 1.4em 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0.35em 0 1.4em 2.1em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto 1.75em;
+}
+
+/**
+ * 7.0 - Clearings
+ */
+
+blockquote:before,
+blockquote:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+blockquote:after {
+	clear: both;
+}
+
+/**
+ * 8.0 - Posts and pages
+ */
+
+h1,
+.mce-content-body h1{
+	font-size: 32px;
+	font-size: 2rem;
+	line-height: 1.17;
+	margin-top: 1.5em;
+	margin-bottom: 0.6666666666666667em;
+}
+
+h2,
+.mce-content-body h2 {
+	margin-top: 1.8em;
+	margin-bottom: 0.8em;
+}
+
+h2,
+.mce-content-body h2 {
+	font-size: 28px;
+	font-size: 1.75rem;
+	line-height: 1.2;
+}
+
+h3,
+.mce-content-body h3 {
+	font-size: 24px;
+	font-size: 1.5rem;
+	line-height: 1.25;
+	margin-top: 2.25em;
+	margin-bottom: 1em;
+}
+
+h4,
+.mce-content-body h4 {
+	font-size: 22px;
+	font-size: 1.375rem;
+	line-height: 1.46;
+	margin-top: 2.625em;
+	margin-bottom: 1.166666666666667em;
+}
+
+h5,
+.mce-content-body h5 {
+	line-height: 1.4;
+	margin-top: 3.15em;
+	margin-bottom: 1.4em;
+}
+
+blockquote,
+h5,
+.mce-content-body h5 {
+	font-size: 20px;
+	font-size: 1.25rem;
+
+}
+
+h6,
+.mce-content-body h6 {
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.75;
+	margin-top: 3.9375em;
+	margin-bottom: 1.555555555555556em;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	margin-top: 0;
+}
+
+.more-link {
+	clear: both;
+	display: block;
+	font-weight: 600;
+	margin-top: 21px;
+	word-wrap: break-word;
+}
+
+.view-more {
+	clear: both;
+	margin: 0 0 35px;
+	padding: 0 30px;
+	text-align: center;
+}
+
+/**
+ * 9.0 - Comments
+ */
+
+.form-submit {
+	text-align: center;
+}
+
+
+/**
+ * 10.0 - Media
+ */
+
+.avatar {
+	border-radius: 50%;
+}
+
+.wp-smiley {
+	border: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object,
+video {
+	margin-bottom: 1.555555555555556em;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+p > embed,
+p > iframe,
+p > object,
+p > video {
+	margin-bottom: 0;
+}
+
+/**
+ * 10.1 - Captions
+ */
+
+.wp-caption {
+	margin-bottom: 1.555555555555556em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0;
+}
+
+.wp-caption .wp-caption-text {
+	font-style: italic;
+	text-align: center;
+}
+
+/**
+ * 10.2 - Galleries
+ */
+
+.gallery {
+	margin: 0 -1.1666667% 1.555555555555556em;
+}
+
+.gallery-item {
+	display: inline-block;
+	max-width: 33.33%;
+	padding: 0 1.1400652% 2.2801304%;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-1 .gallery-item {
+	max-width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-icon img {
+	margin: 0 auto;
+}
+
+.gallery-caption {
+	display: block;
+	font-style: italic;
+	padding-top: 7px;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+	display: none;
+}
+
+/**
+ * 11.0 - Media Queries
+ */
+
+/**
+ * Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+
+@-ms-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+/**
+ * 11.1 - >= 640px
+ */
+
+@media screen and (min-width: 40em) {
+	blockquote.alignright,
+	blockquote.alignleft {
+		width: 50%;
+	}
+}
+
+/**
+ * 11.2 - >= 1366px
+ */
+
+@media screen and (min-width: 85.375em) {
+	h1,
+	.mce-content-body h1 {
+		font-size: 36px;
+		font-size: 2.25rem;
+	}
+
+	h2,
+	.mce-content-body h2 {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+
+	h3,
+	.mce-content-body h3 {
+		font-size: 28px;
+		font-size: 1.75rem;
+	}
+
+	h4,
+	.mce-content-body h4 {
+		font-size: 24px;
+		font-size: 1.5rem;
+	}
+
+	caption,
+	.mce-content-body caption,
+	th,
+	.mce-content-body th,
+	td,
+	.mce-content-body td {
+		padding: 14px 28px;
+	}
+
+	.view-more {
+		margin: 0 0 42px;
+	}
+}
+
+/**
+ * 11.3 - >= 1600px
+ */
+
+@media screen and (min-width: 100em) {
+	h1,
+	.mce-content-body h1 {
+		font-size: 42px;
+		font-size: 2.625rem;
+	}
+
+	h2,
+	.mce-content-body h2 {
+		font-size: 35px;
+		font-size: 2.1875rem;
+	}
+}
+
+/**
+ * 12.0  - >= Colors
+ */
+
+/* Background Color */
+body {
+	background: #fff;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+/* Secondary Background Color */
+hr,
+pre,
+thead th,
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea,
+fieldset,
+select {
+	background-color: #fafafa;
+}
+
+
+/* 40% of Secondary Background Color */
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="month"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+	background-color: rgba(250,250,250,0.4);
+}
+
+/* Main Text Color */
+body,
+input,
+select,
+textarea {
+	color: #666;
+}
+
+/* Button Text Color */
+mark,
+ins,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	color: #fff;
+}
+
+/* Button Hover Text Color */
+button[disabled]:hover,
+button[disabled]:focus,
+.button:hover,
+.button:focus,
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus {
+	color: #fff;
+}
+
+
+/* Button Background Color */
+.button,
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus {
+	background-color: #111;
+}
+
+/* Button Hover Background Color */
+.button:hover,
+.button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	background-color: #999;
+}
+
+/* Link Color */
+a,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="month"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+	color: #000;
+}
+
+mark,
+ins {
+	background-color: #000;
+}
+
+/* Link Hover Color */
+a:hover,
+a:focus,
+a:active,
+.search-submit:hover,
+.search-submit:focus,
+.dropdown-toggle:hover,
+.dropdown-toggle:focus,
+.required {
+	color: #999;
+}
+
+/* Secondary Link Color */
+.search-submit,
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea {
+	color: #999;
+}
+
+/* Heading Text Color */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.drop-cap::first-letter {
+	color: #111;
+}
+
+/* 86% of Heading Text Color */
+blockquote {
+	color: rgba(0,0,0,0.86);
+}
+
+/* Border Color */
+table,
+th,
+td,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="month"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+blockquote {
+	border-color: #ebebeb;
+}
+
+/**
+ * 13.0 - RTL
+ */
+
+.rtl .drop-cap:first-letter {
+    float: right;
+    margin: 7px  7px -3px  16px;
+}
+
+.rtl blockquote {
+	border-left: 0;
+	border-right: 5px solid #ebebeb;
+	padding: 0.35em 1.4em 0.35em 0;
+}
+
+.rtl ul,
+.rtl ol {
+	margin: 0 1.647em 1.750em 0;
+}
+
+.rtl li > ul,
+.rtl li > ol {
+    margin-bottom: 0;
+}
+
+.rtl th,
+.rtl .mce-item-table th,
+.rtl td,
+.rtl .mce-item-table td {
+	text-align: right;
+}
+
